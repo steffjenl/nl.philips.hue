@@ -1,0 +1,20 @@
+{
+  "$extends": "hue",
+  "name": {
+    "en": "Socket",
+    "nl": "Stekker",
+    "de": "Stecker"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff",
+    "dim"
+  ],
+  "capabilitiesOptions": {
+    "dim": {
+      "opts": {
+        "duration": true
+      }
+    }
+  }
+}

@@ -472,6 +472,63 @@
     },
     {
       "images": {
+        "large": "/drivers/socket/assets/images/large.jpg",
+        "small": "/drivers/socket/assets/images/small.jpg"
+      },
+      "pair": [
+        {
+          "id": "list_bridges",
+          "template": "list_devices",
+          "options": {
+            "singular": true,
+            "title": {
+              "en": "Select your bridge..."
+            }
+          },
+          "navigation": {
+            "next": "check_authentication"
+          }
+        },
+        {
+          "id": "check_authentication",
+          "template": "loading"
+        },
+        {
+          "id": "authenticate"
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "name": {
+        "en": "Socket",
+        "nl": "Stekker",
+        "de": "Stecker"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        }
+      },
+      "id": "socket"
+    },
+    {
+      "images": {
         "large": "/drivers/tap/assets/images/large.jpg",
         "small": "/drivers/tap/assets/images/small.jpg"
       },

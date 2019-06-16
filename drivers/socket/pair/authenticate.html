@@ -1,0 +1,27 @@
+<style type="text/css">
+#press-button-image {
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: url(authenticate.assets/pair-bridge.png) no-repeat center center;
+}
+
+@media only screen and (max-width: 512px) {
+	#press-button-image {
+      background-size: contain;
+    }
+}
+</style>
+
+<p data-i18n="pair.press_button.description"></p>
+<div id="press-button-image"></div>
+
+<script type="text/javascript">
+Homey.setTitle( __('pair.press_button.title') );
+Homey.on('error', function( err ) {
+  Homey.alert(err, 'error');
+});
+</script>
