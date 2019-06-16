@@ -6,6 +6,7 @@ const HueDriver = require('../../lib/HueDriver.js');
 const DEFAULT_ICON	= 'LCT001';
 const CAPABILITIES_MAP = {
 	'on/off light': [ 'onoff' ],
+	'on/off plug-in unit': [ 'onoff' ],
 	'dimmable light': [ 'onoff', 'dim' ],
 	'dimmable plug-in unit': [ 'onoff', 'dim' ],
 	'color temperature light': [ 'onoff', 'dim', 'light_temperature' ],
@@ -43,6 +44,7 @@ const ICONS_MAP = {
 	'LST002': 'LST001',
 	'LST003': 'LST001',
 	'LWF001': 'LWF001',
+	'Plug 01': DEFAULT_ICON,
 }
 
 module.exports = class DriverBulb extends HueDriver {
