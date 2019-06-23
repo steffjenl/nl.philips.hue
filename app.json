@@ -472,8 +472,8 @@
     },
     {
       "images": {
-        "large": "/drivers/socket/assets/images/large.jpg",
-        "small": "/drivers/socket/assets/images/small.jpg"
+        "large": "/drivers/socket/assets/images/large.png",
+        "small": "/drivers/socket/assets/images/small.png"
       },
       "pair": [
         {
